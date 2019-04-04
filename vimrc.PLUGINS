@@ -1,0 +1,31 @@
+" Begin the section with call plug#begin()
+" List the plugins with Plug commands    
+call plug#begin('~/.vim/plugged')    
+    
+" **************** "    
+" Interface    
+" **************** "    
+    
+" lean & mean status/tabline for vim that's light as air     
+Plug 'vim-airline/vim-airline'    
+    
+" airline themes are in a separate repository    
+Plug 'vim-airline/vim-airline-themes'    
+    
+" Generate a fast shell prompt with powerline symbols and airline colors    
+Plug 'dmitrii-n/promptline.vim'
+    
+" Simple tmux statusline generator with support for powerline symbols and airline integration    
+Plug 'edkolev/tmuxline.vim'    
+    
+" solarized colorscheme    
+Plug 'altercation/vim-colors-solarized'    
+    
+" Adds file type glyphs/icons to popular Vim plugins; load last for    
+" integration with other plugins    
+Plug 'ryanoasis/vim-devicons'    
+    
+" NOTE - Automatically executes filetype plugin indent on and syntax enable.    
+" You can revert the settings after the call. e.g. filetype indent off, syntax off, etc.    
+call plug#end()    
+    

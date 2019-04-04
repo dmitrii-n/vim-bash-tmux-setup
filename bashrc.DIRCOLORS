@@ -1,0 +1,3 @@
+# use new dircolors installed with solarized
+eval `dircolors ~/.dir_colors/dircolors`
+
