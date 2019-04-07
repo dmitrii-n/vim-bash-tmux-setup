@@ -7,6 +7,10 @@ let g:Powerline_symbols = 'fancy'
 let g:airline_theme='simple'
 let g:airline_solarized_bg='dark'
 
+" disable automatic application of airline colors to tmux's statusline 
+" its colors are set manually
+let g:airline#extensions#tmuxline#enabled = 0
+
 " **************** "
 " Promptline settings
 " **************** "
@@ -40,8 +44,8 @@ set guifont=SpaceMono\ Nerd\ Font\ Regular\ 12
 set noshowmode
 set number
 
-" *************************
-" required for proper fonts
-" *************************
+" *******************************************
+" required for proper airline symbols support
+" *******************************************
 scriptencoding utf-8
 set encoding=utf-8
